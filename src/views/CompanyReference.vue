@@ -66,7 +66,7 @@
 
 <script>
 import { mapState } from 'vuex'
-import { formatDate, showErrorMessage } from '../common';
+import { formatDate, showErrorMessage } from '../showErrorMessage';
 
 export default {
     computed: {

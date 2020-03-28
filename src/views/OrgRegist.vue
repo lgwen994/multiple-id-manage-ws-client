@@ -51,7 +51,6 @@
 </template>
 
 <script>
-//import Vue from 'vue'
 import { mapState } from 'vuex'
 import { showErrorMessage } from '../common';
 import CompanyReference from './CompanyReference.vue';
@@ -73,7 +72,6 @@ export default {
         ...mapState('org', ['form'])
     },
     methods: {
-        //regist: function(event) {
         regist: function() {
             this.$Confirm(' Create. Is it OK?', ' CreateConfirm', {
                 ConfirmButtonText: 'OK',
@@ -91,7 +89,6 @@ export default {
                 // Cancel
             });
         },
-        //openCompanyDialog(event) {
         openCompanyDialog() {
             this.$store.dispatch('companyReference/openCompanyDialog', {screen: 'org', kbn: 'Regist'});
         },

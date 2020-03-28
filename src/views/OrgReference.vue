@@ -60,7 +60,6 @@
 </template>
 
 <script>
-//import Vue from 'vue'
 import { mapState } from 'vuex'
 import { formatDate, showErrorMessage } from '../common';
 
@@ -69,7 +68,6 @@ export default {
         ...mapState('orgReference', ['searchForm', 'orgDialogVisible', 'orgList', 'orgSize', 'page'])
     },
     methods: {
-        //search(event) {
         search() {
             this.$store.dispatch('orgReference/setPage', 1);
             this.$store.dispatch('orgReference/searchOrgList').catch(error => showErrorMessage(error));

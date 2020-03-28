@@ -61,7 +61,7 @@
             </el-col>
             <el-col :span="10">
                 <el-breadcrumb separator-class="el-icon-arrow-right">
-                    <el-breadcrumb-item v-for="navi in naviList" :to="{ path: navi.path }">{{navi.name}}</el-breadcrumb-item>
+                    <!-- <el-breadcrumb-item v-for="navi in naviList" :to="{ path: navi.path }">{{navi.name}}</el-breadcrumb-item> -->
                 </el-breadcrumb>
             </el-col>
             <el-col :span="8">
@@ -75,7 +75,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import { mapState } from 'vuex'
 
 export default {

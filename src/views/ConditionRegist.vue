@@ -37,7 +37,6 @@
 </template>
 
 <script>
-    import Vue from 'vue'
     import { mapState } from 'vuex'
     import { showErrorMessage } from '../common';
     export default {
@@ -54,7 +53,7 @@
             }),
         },
         methods: {
-            regist: function(event) {
+            regist: function() {
                 this.$Confirm(' Create. Is it OK?', ' CreateConfirm', {
                     ConfirmButtonText: 'OK',
                     cancelButtonText: 'Cancel',

@@ -174,7 +174,6 @@
 </template>
 
 <script>
-//import Vue from 'vue'
 import { mapState } from 'vuex'
 import { formatDate, showErrorMessage } from '../common';
 import OrgReference from './OrgReference.vue';

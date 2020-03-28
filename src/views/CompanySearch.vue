@@ -48,7 +48,7 @@
 <script>
 import { mapState } from 'vuex'
 import CompanySearchResult from './CompanySearchResult.vue'
-import {showErrorMessage} from '../common';
+import {showErrorMessage} from '../showErrorMessage';
 
 export default {
     components: {

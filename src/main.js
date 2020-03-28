@@ -33,7 +33,7 @@ axios.interceptors.response.use(function (response) {
     return Promise.reject(error);
 });
 
-axios.defaults.baseURL = 'http://localhost:8080';
+axios.defaults.baseURL = 'http://localhost:8080/';
 
   new Vue({
     router,

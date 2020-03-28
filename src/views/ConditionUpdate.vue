@@ -58,7 +58,6 @@
 </template>
 
 <script>
-    import Vue from 'vue'
     import { mapState } from 'vuex'
     import { formatDate, showErrorMessage } from '../common';
 
@@ -79,7 +78,7 @@
             changeMode: function(flg) {
                 this.$store.dispatch('condition/changeMode', flg);
             },
-            update: function(event) {
+            update: function() {
                 this.$Confirm('Update. Is it OK?', 'UpdateConfirm', {
                     ConfirmButtonText: 'OK',
                     cancelButtonText: 'Cancel',

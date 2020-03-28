@@ -37,7 +37,7 @@
 
 <script>
 import { mapState } from 'vuex'
-import { showErrorMessage } from '../common';
+import { showErrorMessage } from '../showErrorMessage';
 
 export default {
     computed: {

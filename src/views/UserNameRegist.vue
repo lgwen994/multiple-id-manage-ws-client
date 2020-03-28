@@ -39,7 +39,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import { mapState } from 'vuex'
 import { showErrorMessage } from '../common';
 
@@ -58,14 +57,13 @@ export default {
         ...mapState('common', ['locales'])
     },
     methods: {
-        regist: function(event) {
+        regist: function() {
             this.$Confirm(' Create. Is it OK?', ' CreateConfirm', {
                 ConfirmButtonText: 'OK',
                 cancelButtonText: 'Cancel',
                 type: 'warning'
             }).then(() => {
                 this.$store.dispatch('userName/registUserName').then(() => {
-                    var userNameId = this.$store.state.userName.form.userNameId;
                     this.$router.push({ name: 'userUpdate', params: { userId: this.$store.state.userName.form.userMst.userId}});
                     this.$store.dispatch('common/deleteNavi', {name: 'User Name Create', path: 'userName-regist'});
                     this.$store.dispatch('common/setTable', {name: "User ", value: 'user'});

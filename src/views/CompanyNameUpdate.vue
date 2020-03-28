@@ -60,9 +60,8 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import { mapState } from 'vuex'
-import { showErrorMessage } from '../common'
+import { showErrorMessage } from '../showErrorMessage'
 
 export default {
     computed: {
@@ -83,7 +82,7 @@ export default {
         changeMode: function(flg) {
             this.$store.dispatch('companyName/changeMode', flg);
         },
-        update: function(event) {
+        update: function() {
             this.$Confirm('Comfirm to update', 'Confirmation', {
                 ConfirmButtonText: 'OK',
                 cancelButtonText: 'Cancel',

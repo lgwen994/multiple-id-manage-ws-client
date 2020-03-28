@@ -31,8 +31,8 @@
 
 <script>
 import { mapState } from 'vuex';
-import {formatDate, showErrorMessage} from '../common';
-
+import {formatDate} from '../common';
+import {showErrorMessage} from '../showErrorMessage';
 export default {
     computed: {
        ...mapState('company', [

@@ -111,7 +111,7 @@ export default {
 		setEditable(state, data) {
 			state.editable = data;
 		},
-		setSearchResultVisible(state, data) {
+		setSearchResultVisible(state) {
 			state.searchResultVisible = true;
 		},
 		setActiveTime(state) {
