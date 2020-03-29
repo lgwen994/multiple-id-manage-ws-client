@@ -1,5 +1,5 @@
 
-# vuejs-demo
+# multiple-id-manage-ws-client
 
 ## Project setup
 ```
